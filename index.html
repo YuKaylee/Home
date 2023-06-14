@@ -1,0 +1,186 @@
+<!doctype HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Child Trafficking </title>
+	<link rel="stylesheet" type="text/css" href="basic.css"/>
+</head>
+<body>
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 1500px;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color:#444;
+}
+</style>
+</head>
+<body>
+
+<div id="mySidepanel" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+		<a href="#intro">Introduction</a> 
+		<a href="#Internet"> How is it prevalent on the Internet?</a> 
+		<a href= "#Prevention"> How can we prevent this? </a>
+		<a href= "#Quiz">Quiz</a>
+		<a href= "#Citation"> Citation Page </a>
+</div>
+
+<button class="openbtn" onclick="openNav()">☰ Menu</button>  
+
+<script>
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+</script>
+<div id="ageQuiz" class="modal">
+	<div class="modal-content">
+    <h2>Hi! How old are you?</h2>
+            <p>We want to ensure you're learning about what you need to know as a child or parent.</p>
+
+            <p id="error" style="display: none;"></p>
+        
+            <label for="child_parent">I am a:</label><br>
+            <select id="child_parent" name="child_parent" required="">
+                <option style= "font-family: Lato, sans-serif;"value="parent">Parent</option>
+                <option style= "font-family: Lato, sans-serif;"value="child">Child</option>
+				<option style= "font-family: Lato, sans-serif;"value="adult">Adult</option>
+            </select><br>
+            <label style = "font-family: Lato, sans-serif;"for="fname">First name</label><br>
+            <input type="text" id="fname" placeholder="First Name" required=""><br>
+            <label for="lname">Last name</label><br>
+            <input type="text" id="lname" placeholder="Last Name" required=""><br>
+            <label for="bDay">Birthday</label><br>
+            <input type="text" id="bDay" placeholder="MM/DD/YYYY" required=""><br>
+            <input type="submit" id="submit" value="Submit" onclick="closeForm()">
+            <p style="font-size: 10px; color:#637282;">Depending on your age you will be directed to either the parent's section or children's section.</p>
+	</div>
+
+</div>
+
+<script>
+
+var modal = document.getElementById("ageQuiz");
+var btn = document.getElementById("ageQuizBtn")
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+function closeForm() {
+  document.getElementById("ageQuiz").style.display = "none";
+}
+</script>
+	
+	<div class="header">
+		<h1 style="color:#D3D3D3;"> Raising Awareness for the Better. </h1>
+	</div>
+
+	<div class="body">
+		<h2> Child Trafficking </h2>
+		
+		<p id ="intro"> <h2> Intro </h2> </p>
+		
+			<p> 
+			It is the recruitment or the kidnapping of children, to exploit them, whether it be sexual or physically. Oftentimes, the adults are those who are a trusted figure for that child. 41% of the time, the adults have familial connections to the child being trafficked. In these cases, the trafficker always benefits, whether it is financially or sexually, or another way. Oftentimes, the child is forced into labour and or forced into more horrible situations. And most often, children that have no trusted adult figures are targeted, whether it be that they are a migrant or a citizen of a country. 
+			<br>
+			<br>
+			These adults will ususally target children online. The rise of online predators and trafficking is concerning. These adults will parade around as teenagers or someone of the same age as the child they’re talking to, but in reality, they’re ages older, and have far more sinister plans.  Often, this leads to grooming, sextortion, capping, and more. They may also try to convince them to talk to them, or meet up for the hope of a job, or a better life. 
+			</p>
+			<p>
+			As said before, these children are often neglected or stuck in poverty and violence. They are lured in by the hopes of a better live and or job, or are lured in because the person seems to be a trusted figure. Most victims find it hard to say anything or leave, because they don't know how to, and they trust the figure too much.  
+			</p>
+		<p id ="Internet"> <h2> The Internet </h2> </p>
+	
+			<p>
+				Approximately 40% of sex trafficking is on the internet. It is very common now, especially due to COVID and 
+				the rise of children using the internet often. It is harder to track down these cases, and often they go unreported. Facebook and Instagram, are large sites whose companies have said to be against human trafficking and working on their websites to be against it, but it seems to run rampant. All the children are simply looking for affirmation, for safety and love, and most of them are neglected, or stuck in poverty and violence. Because of the Internet, it is even more easy for predators and traffickers to find victims, and to gain money fast as well as exploit many others. 
+			
+ 			</p>
+		<p id ="Signs"> <h2> Signs </h2> </p>
+	
+		<ul> 
+			<li> Changes in behaviour, such as distrust for authority figures and acting unusal, agressive like. </li>
+			<li> Sleeping in class, or skipping school and meals. </li>
+			<li> Gaining money from an unknown source, gaining new things, and being secretive about it. </li>
+			<li> Talking about not being able to leave a certain situation or a job due to debts. </li>
+			<li> Being secretive and avoiding questions of who they're chatting with online, hanging out with older and different people.  </li>
+			<li> And more. </li>
+
+		</ul>
+	
+		<p id ="Prevention"> <h2> Prevention </h2> </p>
+			<p>
+			As a parent, you can be a trusted figure for that child. You can report this to another authority figure, such as the police. You can also report this to <a href="https://cybertip.ca/en/about/mandatory-reporting/"> Cybertip.ca </a> and helps raise awareness. 
+			<br>
+			<br>
+			<img src="images/talking.jpg" alt="Parent Child Conversation">
+			<br>
+			<br>
+			Awareness is by far the most important thing that can be done. Teach your children and other children how to be safe on the internet, and to not trust everything that someone else will say. Finally, provide a safe space for your child and other children who are struggling. Children need care and attention, and if you can be a place of trust and support, then there will be less of a chance they will be lured by older, predatory people. 
+		</p>
+		<h2 id="Quiz" ><a href= "quiz.html"> Quiz </a></h2>
+		<h2 id="Citation" ><a href= "citations.html"> Quiz </a></h2>
+		
+	</div>
+</body>
+
+
+</html>
